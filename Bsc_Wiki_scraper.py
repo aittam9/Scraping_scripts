@@ -14,8 +14,6 @@ soup = BS(page.content, 'html5lib')
 #clean the html/js tags
 text1 = '\n'.join([''.join(s.findAll(text=True))for s in soup.findAll('p')])
 
-#print(soup.prettify())
-
 # asking to save the text in a file
 question = input('Do you want to save the text in a file?')
 if question == 'yes':
